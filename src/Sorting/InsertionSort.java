@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InsertionSort {
 
-    static int [] array = new int [] {3,32,6,47,14,20,1,9};
+    static int [] array = new int [] {1,9,20,34,58};
 
     public static int [] sortArray (int [] arr) {
         for (int i = 1; i < arr.length; i++) {
@@ -15,13 +15,12 @@ public class InsertionSort {
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
                 j--;
-                element = arr[j+1];
+
             }
 
         }
         return arr;
     }
-
 
 
 
