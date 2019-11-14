@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="Array changed">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Sorting/InsertionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sorting/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorting/SelectionSort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SelectionSort">
+  <component name="RunManager" selected="Application.InsertionSort">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedList.App" />
       <module name="ADT" />
@@ -55,6 +54,19 @@
     </configuration>
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sorting.BubbleSorting" />
+      <module name="ADT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sorting.InsertionSort" />
       <module name="ADT" />
       <extension name="coverage">
         <pattern>
@@ -91,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.BubbleSorting" />
         <item itemvalue="Application.App" />
@@ -109,6 +122,14 @@
       <option name="presentableId" value="Default" />
       <updated>1573138310969</updated>
     </task>
+    <task id="LOCAL-00001" summary="Array changed">
+      <created>1573728600868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573728600868</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
