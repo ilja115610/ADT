@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
 
-        int [] array = new int [] {15,3,62,32,45,7,19,51};
+        int [] array = new int [] {14,1,6,3,15,7,19,51};
         System.out.print(Arrays.toString(sortArray(array)));
 
     }
 
         public static int [] sortArray (int [] a) {
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length-1; i++) {
             int min = i;
             for (int j = i+1; j < a.length; j++) {
                 if (a[j]<a[min]) {
