@@ -4,33 +4,40 @@ import java.util.Arrays;
 
 public class InsertionSort {
 
-    static int [] array = new int [] {1,9,20,34,58};
+    static Integer [] array = new Integer [] {20,7,25,47,8};
 
-    public static int [] sortArray (int [] arr) {
-        for (int i = 1; i < arr.length; i++) {
-            int element = arr[i];
-            int j = i-1;
-            while (j >=0 && arr[j] > element) {
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-                j--;
 
-            }
+    public static boolean less (Comparable a, Comparable b) {
+        return a.compareTo(b) < 0;
+    }
 
-        }
-        return arr;
+    public static void swap (Integer [] array, int i, int j) {
+        Integer swap = array [i];
+        array[i] = array[j];
+        array[j] = swap;
     }
 
 
+    public static void printArray (Integer [] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            System.out.print(" ");
+        }
+
+    }
 
 
     public static void main(String[] args) {
 
-        System.out.println(Arrays.toString(sortArray(array)));
+        for (int i = 1; i < array.length; i++) {
+            int element = array[i];
+            int j = i - 1;
+            while (j >= 0 && less(element, array[j])) {
+                swap(array, j, j+1);
+                j--;
+            }
+        }
 
-
+     printArray(array);
     }
-
-
-}
+    }
