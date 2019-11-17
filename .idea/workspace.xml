@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Searching/BinarySearch.java" afterDir="false" />
+    <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="BinarySearch Tree">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Searching/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Searching/LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinarySearch">
+  <component name="RunManager" selected="Application.Tree">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Searching.BinarySearch" />
       <module name="ADT" />
@@ -92,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sorting.SelectionSort" />
+    <configuration name="Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Tree" />
       <module name="ADT" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sorting.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tree" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.InsertionSort" />
-        <item itemvalue="Application.SelectionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573989248386</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="BinarySearch added">
+      <created>1573995362426</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573995362426</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,22 +199,12 @@
     <MESSAGE value="Comparable interface implemented" />
     <MESSAGE value="MergeSort complete" />
     <MESSAGE value="LinearSearch added" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinearSearch added" />
+    <MESSAGE value="BinarySearch added" />
+    <MESSAGE value="BinarySearch Tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="BinarySearch Tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Searching/BinarySearch.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Searching/BinarySearch.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" log-message="true" type="java-exception" />
       </default-breakpoints>

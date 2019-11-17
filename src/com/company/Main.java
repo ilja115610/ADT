@@ -4,9 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Counter newCount = new Counter ("times");
-        newCount.increment();
-        System.out.println(newCount.toString());
+
+
+
+
+
+        //Counter newCount = new Counter ("times");
+        //newCount.increment();
+        //System.out.println(newCount.toString());
 
         //Stack newStack = new Stack (5);
         //System.out.println(reverseString("Hello"));
