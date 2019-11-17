@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sorting/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Searching/LinearSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADT/Sorting/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/Sorting/InsertionSort.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,20 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MergeSort">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.App" />
-      <module name="ADT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.LinearSearch">
     <configuration name="BubbleSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sorting.BubbleSorting" />
       <module name="ADT" />
@@ -72,6 +58,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Searching.LinearSearch" />
+      <module name="ADT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Searching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.BubbleSorting" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573832585299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MergeSort complete">
+      <created>1573915511594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573915511594</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,17 +181,11 @@
     <MESSAGE value="Final code" />
     <MESSAGE value="New version of Insertion Sort" />
     <MESSAGE value="Comparable interface implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comparable interface implemented" />
+    <MESSAGE value="MergeSort complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="MergeSort complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sorting/MergeSort.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" log-message="true" type="java-exception" />
       </default-breakpoints>
