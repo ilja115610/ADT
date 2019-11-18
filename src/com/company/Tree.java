@@ -5,7 +5,7 @@ public class Tree {
 
     private Node root;
 
-    public void insert (int key, int data) {
+    public void insert (int key, String data) {
 
         Node newNode = new Node (key,data);
 
@@ -34,9 +34,9 @@ public class Tree {
         }
     }
 
-    public int findKey (int key) {
+    public String findKey (int key) {
         if (root == null) {
-            return -1;
+            return "Not found";
         }
         else {
             Node current = root;
@@ -44,24 +44,24 @@ public class Tree {
             while(true){
                 parent = current;
             if (current.key == key) {
-                return key;}
+                return current.data;}
                 else if (key < current.key) {
                     current = current.leftChild;
                     if (current == null) {
-                        return -1;
+                        return "Not found";
                     }
                      if(current.key == key) {
                      parent.leftChild.key = key;
-                     return key;}
+                     return current.data;}
             }
                     if (key > current.key) {
                         current = current.rightChild;
                         if (current == null) {
-                            return -1;
+                            return "Not found";
                         }
                         if (current.key == key) {
                             parent.rightChild.key = key;
-                            return key;
+                            return current.data;
                         }
 
                 }
@@ -78,11 +78,11 @@ public class Tree {
 
     public static void main(String[] args) {
         Tree biTree = new Tree ();
-        biTree.insert(12,27);
-        biTree.insert(16,25);
-        biTree.insert(7,21);
+        biTree.insert(12,"John");
+        biTree.insert(16,"Michael");
+        biTree.insert(7,"George");
 
-        int abc = biTree.findKey(7);
+        String abc = biTree.findKey(9);
 
         System.out.println(abc);
     }

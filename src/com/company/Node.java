@@ -3,11 +3,11 @@ package com.company;
 public class Node {
 
     int key;
-    int data;
+    String data;
     Node leftChild;
     Node rightChild;
 
-    public Node(int key, int data) {
+    public Node(int key, String data) {
         this.key = key;
         this.data = data;
     }
