@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ADT/com/company/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/com/company/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ADT/com/company/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/com/company/Tree.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574010454816</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="BinarySearch Tree added String data">
+      <created>1574075844844</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574075844844</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +214,8 @@
     <MESSAGE value="LinearSearch added" />
     <MESSAGE value="BinarySearch added" />
     <MESSAGE value="BinarySearch Tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="BinarySearch Tree" />
+    <MESSAGE value="BinarySearch Tree added String data" />
+    <option name="LAST_COMMIT_MESSAGE" value="BinarySearch Tree added String data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
