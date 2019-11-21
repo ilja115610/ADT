@@ -4,25 +4,17 @@ public class App {
 
     public static void main(String[] args) {
 
-        DoublyLinkedList newList = new DoublyLinkedList();
-
-        System.out.println(newList.isEmpty());
-
-
-
-
+       LinkedList newList = new LinkedList();
+       newList.insertFirst(10);
+        newList.insertFirst(20);
+        newList.insertFirst(30);
+        newList.insertFirst(40);
 
 
-        newList.insertFirst(555);
-        newList.insertFirst(444);
 
-        newList.insertLast(111);
-        newList.insertLast(222);
+        newList.reverseList(newList.first);
 
-        newList.deleteFirst();
-        newList.deleteLast();
 
-        newList.displayList();
 
 
 

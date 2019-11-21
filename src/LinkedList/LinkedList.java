@@ -2,8 +2,8 @@ package LinkedList;
 
 public class LinkedList {
 
-    private Node first;
-    private Node last;
+    public Node first;
+    public Node last;
 
 
     public LinkedList() {
@@ -16,6 +16,8 @@ public class LinkedList {
         } else
             return false;
     }
+
+
 
     public void insertFirst(int data) {
         Node newNode = new Node();

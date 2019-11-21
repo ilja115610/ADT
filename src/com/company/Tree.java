@@ -72,6 +72,12 @@ public class Tree {
 
     }
 
+    public void printTree () {
+        Node current = root;
+
+
+    }
+
 
 
 
@@ -85,6 +91,8 @@ public class Tree {
         String abc = biTree.findKey(9);
 
         System.out.println(abc);
+
+        biTree.printTree();
     }
 
 
