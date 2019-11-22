@@ -12,7 +12,7 @@ public class App {
 
 
 
-        newList.reverseList(newList.first);
+
 
 
 

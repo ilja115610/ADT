@@ -12,14 +12,29 @@ public class LinearSearch {
              }
          }
 
-
-
         return answer;
+    }
+
+
+    public static int linSearchRecursive (int [] a, int x, int i) {
+        if (i == a.length) {
+            return -1;
+        }
+        if (a[i] == x) {
+            return i;
+        }
+        else {
+             return linSearchRecursive(a,x, i+1);
+        }
+
+
     }
 
     public static void main(String[] args) {
 
         System.out.println(linearSearch(arr,5));
+
+        System.out.println(linSearchRecursive(arr,4,0));
 
     }
 
