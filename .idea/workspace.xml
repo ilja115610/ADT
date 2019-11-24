@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADT/LinkedList/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/LinkedList/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADT/LinkedList/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/LinkedList/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Searching/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Searching/LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ADT/Searching/LinearSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/Searching/LinearSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Searching/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Searching/BinarySearch.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinearSearch">
+  <component name="RunManager" selected="Application.BinarySearch">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedList.App" />
       <module name="ADT" />
@@ -108,10 +107,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.Tree" />
-        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.MergeSort" />
       </list>
     </recent_temporary>
@@ -197,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574357362782</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Recursive LinearSearch">
+      <created>1574422781343</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574422781343</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +230,8 @@
     <MESSAGE value="BinarySearch Tree" />
     <MESSAGE value="BinarySearch Tree added String data" />
     <MESSAGE value="No changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="No changes" />
+    <MESSAGE value="Recursive LinearSearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recursive LinearSearch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
