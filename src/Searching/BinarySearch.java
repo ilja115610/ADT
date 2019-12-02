@@ -26,15 +26,19 @@ public class BinarySearch {
 
     public static int recursiveBiSearch (int [] a, int x, int p, int r) {
        int q = (p+r)/2;
-       if (a[q] == x) {
-           return q;
+       if (p > r) {
+           return -1;
        }
-            if (a[q] < x) {
-             return recursiveBiSearch(a, x, q + 1, r);
+       else {
+           if (a[q] == x) {
+               return q;
+           }
+            else if (a[q] < x) {
+                return recursiveBiSearch(a, x, q + 1, r);
            } else {
               return recursiveBiSearch(a, x, p, q - 1);
            }
-
+       }
     }
 
     public static void main(String[] args) {
@@ -42,7 +46,7 @@ public class BinarySearch {
        int abc =  biSearch(arr, 8);
        System.out.println(abc);
 
-       System.out.println(recursiveBiSearch(arr, 7, 0,8));
+       System.out.println(recursiveBiSearch(arr, 10, 0,8));
 
 
 

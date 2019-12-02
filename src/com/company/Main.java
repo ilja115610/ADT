@@ -4,6 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+    HashTable table = new HashTable(13);
+    table.insert("Book");
+    table.insert("Dog");
+
+    table.displayAll();
+
+
+
 
 
 
