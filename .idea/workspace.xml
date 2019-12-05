@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADT/com/company/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/com/company/HashTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADT/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575320354154</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="HashTable modified to array of objects">
+      <created>1575544088695</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1575544088695</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +250,8 @@
     <MESSAGE value="Recursive LinearSearch" />
     <MESSAGE value="Recursive BinarySearch added" />
     <MESSAGE value="HashTable added" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashTable added" />
+    <MESSAGE value="HashTable modified to array of objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="HashTable modified to array of objects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
