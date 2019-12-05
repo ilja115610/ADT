@@ -1,19 +1,29 @@
 package com.company;
 
-public class HashTable {
+public class HashTable <K,V>  {
 
-    private String[] hashArray;
+    private Node[] hashArray;
     private int arraySize; // total number of slots available in array
     private int size = 0; // counter of elements in hashtable
+
+    public class Node<K,V> {
+        K name;
+        V num;
+
+        public Node (K name,V num) {
+            this.name = name;
+            this.num = num;
+        }
+    }
 
     public HashTable(int numOfSlots) {
 
         if (isPrime(arraySize)) {
-            hashArray = new String[numOfSlots];
+            hashArray =  new Node [numOfSlots];
             arraySize = numOfSlots;
         } else {
             int nextPrime = getNextPrime(numOfSlots);
-            hashArray = new String[nextPrime];
+            hashArray = new Node[nextPrime];
             arraySize = nextPrime;
             System.out.println("Hashtable size " + numOfSlots + " is not a prime number ");
             System.out.println("Hashtabe size changed to " + nextPrime);
@@ -39,7 +49,7 @@ public class HashTable {
     }
 
     // preferred array index positions
-    private int hashFunc1 (String word){
+    private int hashFunc1 (K word){
     int hashVal = word.hashCode();
     hashVal = hashVal % arraySize;
     if (hashVal < 0) {
@@ -50,7 +60,7 @@ public class HashTable {
     }
 
     // calculates step size
-    private int hashFunc2 (String word) {
+    private int hashFunc2 (K word) {
 
         int hashVal = word.hashCode();
         hashVal = hashVal % arraySize;
@@ -63,44 +73,46 @@ public class HashTable {
 
     }
 
-    public void insert (String word) {
-        int indexVal = hashFunc1(word);
-        int stepSize = hashFunc2(word);
+    public void insert (K name,V num) {
+        Node<K,V> newNode = new Node<K,V> (name, num);
+        int indexVal = hashFunc1(newNode.name);
+        int stepSize = hashFunc2(newNode.name);
 
         while(hashArray[indexVal] != null) {
             indexVal += stepSize;
             indexVal = indexVal % arraySize;
         }
 
-        hashArray[indexVal] = word;
-        System.out.println("Inserted word " + word);
+        hashArray[indexVal] = newNode;
+        //System.out.println("Inserted word " + word);
         size++;
     }
 
 
-    public String find (String word) {
+    public V findByName (K word) {
 
         int indexVal = hashFunc1(word);
         int stepSize = hashFunc2(word);
 
         while (hashArray[indexVal] != null) {
-            if (hashArray[indexVal].equals(word)){
-                return hashArray[indexVal];
+            if (hashArray[indexVal].name.equals(word)){
+                return (V) hashArray[indexVal].num;
             }
             indexVal += stepSize;
             indexVal = indexVal % arraySize;
         }
-
-
-        return "Not found";
-
+        return null;
     }
+
+
+    //public K findByNum (V num) {
+
 
 
     public void displayAll () {
         for (int i = 0; i < hashArray.length; i++) {
             if (hashArray[i] != null) {
-                System.out.println(hashArray[i]);
+                System.out.println(hashArray[i].name + " " + hashArray[i].num);
             }
             else
                 System.out.println("--");

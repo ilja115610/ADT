@@ -4,17 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-    HashTable table = new HashTable(13);
-    table.insert("Book");
-    table.insert("Dog");
+    HashTable<String, Integer> newTable = new HashTable<>(13);
+    newTable.insert("Kolja",12345);
+    newTable.insert("Vasja",45678);
+    newTable.insert("Anna",987454);
 
-    table.displayAll();
-
-
-
-
-
-
+    //newTable.displayAll();
+    System.out.print(newTable.findByName("Anna"));
 
 
         //Counter newCount = new Counter ("times");

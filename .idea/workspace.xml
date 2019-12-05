@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b4bff5-8ce1-45d3-973a-049af11a3bb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/HashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADT/Searching/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/Searching/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Searching/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Searching/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ADT/com/company/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/com/company/HashTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ADT/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ADT/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -212,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574605128643</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="HashTable added">
+      <created>1575320354154</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575320354154</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +248,8 @@
     <MESSAGE value="No changes" />
     <MESSAGE value="Recursive LinearSearch" />
     <MESSAGE value="Recursive BinarySearch added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recursive BinarySearch added" />
+    <MESSAGE value="HashTable added" />
+    <option name="LAST_COMMIT_MESSAGE" value="HashTable added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
