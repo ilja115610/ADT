@@ -17,9 +17,7 @@ public class MergeSort {
         sort(arr, p, mid);
         sort(arr, mid+1,r);
         merge(arr,p,mid,r);
-
     }
-
 
     public static void merge (int [] arr, int start, int mid, int end) {
         int [] auxArr = new int [(end-start)+1];
@@ -37,7 +35,6 @@ public class MergeSort {
                 rightIndex++;
             }
             k++;
-
         }
 
         if (leftIndex <= mid) {
@@ -50,7 +47,6 @@ public class MergeSort {
                 auxArr[k++] = arr[rightIndex++];
             }
         }
-
         for (int s = 0; s < auxArr.length; s++ ) {
             arr[start + s] = auxArr[s];
         }

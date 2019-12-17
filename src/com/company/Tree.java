@@ -63,12 +63,9 @@ public class Tree {
                             parent.rightChild.key = key;
                             return current.data;
                         }
-
                 }
-
             }
         }
-
 
     }
 
@@ -77,9 +74,6 @@ public class Tree {
 
 
     }
-
-
-
 
 
     public static void main(String[] args) {
