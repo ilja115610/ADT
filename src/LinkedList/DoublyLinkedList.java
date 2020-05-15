@@ -32,6 +32,47 @@ public class DoublyLinkedList {
 
     }
 
+        public void reverseList () {
+
+        Node curr = first;
+        Node pred = null;
+        Node newHead = null;
+
+        while (curr != null) {
+            pred = curr.previous;
+            curr.previous = curr.next;
+            curr.next = pred;
+            newHead = curr;
+            curr = curr.previous;
+
+        }
+        first = newHead;
+
+        }
+
+
+        public void reverseRecurs (Node curr,Node pred, Node newHead) {
+
+            if(curr == null){
+                first = newHead;
+                return;
+            }
+            pred = curr.previous;
+            curr.previous = curr.next;
+            curr.next = pred;
+            newHead = curr;
+            curr = curr.previous;
+
+            reverseRecurs(curr,pred,newHead);
+        }
+
+
+
+
+    public Node getFirst () {
+        return first;
+    }
+
     public void displayList () {
     Node current = first;
     while (current != null) {

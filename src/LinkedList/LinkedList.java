@@ -38,6 +38,49 @@ public class LinkedList {
     }
 
 
+    public void displayRev (Node current) {
+
+        if (current == null) {
+            return;
+        }
+        displayRev(current.next);
+        System.out.println(current.data);
+    }
+
+    public void reverseList () {
+        Node current = first;
+        Node sled = null;
+        Node pred = null;
+
+        while(current!=null) {
+            sled = current.next;
+            current.next = pred;
+            pred = current;
+            current = sled;
+        }
+        first = pred;
+    }
+
+    public void reverseListRec (Node curr,Node sled, Node pred) {
+
+        if (curr == null) {
+            first = pred;
+            return;
+        }
+        sled = curr.next;
+        curr.next = pred;
+        pred = curr;
+        curr = sled;
+
+        reverseListRec(curr,sled,pred);
+    }
+
+
+
+    public Node getFirst () {
+        return first;
+    }
+
     public void insertLast(int data) {
         Node newNode = new Node();
         newNode.data = data;
