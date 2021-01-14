@@ -2,7 +2,7 @@ package Searching;
 
 public class LinearSearch {
 
-    public static int [] arr = new int [] {1,2,3,4,5,6,7,8};
+    public static int [] arr = new int [] {5,2,8,4,1,6,7,3};
 
     public static int linearSearch (int [] a, int x) {
         int answer = -1;

@@ -1,12 +1,16 @@
 package com.company;
 
+import java.util.Hashtable;
+
 public class HashTable <K,V>  {
+
+
 
     private Node[] hashArray;
     private int arraySize; // total number of slots available in array
     private int size = 0; // counter of elements in hashtable
 
-    public class Node<K,V> {
+    private static class Node<K,V> {
         K name;
         V num;
 
@@ -18,7 +22,7 @@ public class HashTable <K,V>  {
 
     public HashTable(int numOfSlots) {
 
-        if (isPrime(arraySize)) {
+        if (isPrime(numOfSlots)) {
             hashArray =  new Node [numOfSlots];
             arraySize = numOfSlots;
         } else {
@@ -26,7 +30,7 @@ public class HashTable <K,V>  {
             hashArray = new Node[nextPrime];
             arraySize = nextPrime;
             System.out.println("Hashtable size " + numOfSlots + " is not a prime number ");
-            System.out.println("Hashtabe size changed to " + nextPrime);
+            System.out.println("Hashtable size changed to " + nextPrime);
         }
     }
 
@@ -74,7 +78,7 @@ public class HashTable <K,V>  {
     }
 
     public void insert (K name,V num) {
-        Node<K,V> newNode = new Node<K,V> (name, num);
+        Node<K,V> newNode = new Node<K, V>(name, num);
         int indexVal = hashFunc1(newNode.name);
         int stepSize = hashFunc2(newNode.name);
 
