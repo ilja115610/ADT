@@ -1,4 +1,10 @@
-package com.company;
+package com.abstractData;
+
+import java.util.NoSuchElementException;
+
+/**
+Fixed size queue which can accept integers infinitely, overwriting old elements
+ */
 
 public class QueueCircular {
 
@@ -25,19 +31,16 @@ public class QueueCircular {
             back = -1;
 
         }
-
-
-
     }
 
     public int remove () {
+        if(front == maxSize) {
+            throw new NoSuchElementException("Queue is empty");
+        }
         int removed = front;
         front++;
         counter--;
-        if(front == maxSize) {
-            front = 0;
 
-        }
 
 
         return array[removed];

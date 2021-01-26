@@ -1,23 +1,52 @@
-package com.company;
+package com.abstractData;
 
 
-public class Tree {
+import java.util.NoSuchElementException;
 
-    private Node root;
+/**
+ * Sorted BinaryTree with Generic type values
+ * @param <V> is content of a Node
+ */
+public class Tree<V> {
 
-    public void insert (int key, String data) {
+    private Node<V> root;
 
-        Node newNode = new Node (key,data);
+    /**
+     * Helper class Node contains Key-Value pair
+     * @param <V>
+     */
+   private static class Node<V> {
+
+        Integer key;
+        V data;
+        Node<V> leftChild;
+        Node<V> rightChild;
+
+        public Node(Integer key, V data) {
+            this.key = key;
+            this.data = data;
+        }
+    }
+
+    /**
+     * Inserts new element in Tree in particular order based on (key values) existing elements
+     * @param key value which is used to order elements
+     * @param data Generic data
+     */
+
+    public void insert (Integer key, V data) {
+
+        Node<V> newNode = new Node<>(key, data);
 
         if (root == null) {
             root = newNode;
         }
         else {
-            Node current = root;
-            Node parent;
+            Node<V> current = root;
+            Node<V> parent;
          while (true) {
         parent = current;
-        if (key < current.key) {
+        if (key<current.key) {
             current = current.leftChild;
         if (current == null) {
             parent.leftChild = newNode;
@@ -34,13 +63,19 @@ public class Tree {
         }
     }
 
-    public String findKey (int key) {
+    /**
+     * Finds element in Tree by provided Key
+     * @param key of a Node
+     * @return Generic value of found Node
+     */
+
+    public V findKey (Integer key) {
         if (root == null) {
-            return "Not found";
+            throw new NoSuchElementException();
         }
         else {
-            Node current = root;
-            Node parent;
+            Node<V> current = root;
+            Node<V> parent;
             while(true){
                 parent = current;
             if (current.key == key) {
@@ -48,7 +83,7 @@ public class Tree {
                 else if (key < current.key) {
                     current = current.leftChild;
                     if (current == null) {
-                        return "Not found";
+                        throw new NoSuchElementException();
                     }
                      if(current.key == key) {
                      parent.leftChild.key = key;
@@ -57,7 +92,7 @@ public class Tree {
                     if (key > current.key) {
                         current = current.rightChild;
                         if (current == null) {
-                            return "Not found";
+                            throw new NoSuchElementException();
                         }
                         if (current.key == key) {
                             parent.rightChild.key = key;
@@ -70,14 +105,14 @@ public class Tree {
     }
 
     public void printTree () {
-        Node current = root;
+        Node<V> current = root;
 
 
     }
 
 
     public static void main(String[] args) {
-        Tree biTree = new Tree ();
+        Tree<String> biTree = new Tree<> ();
         biTree.insert(12,"John");
         biTree.insert(16,"Michael");
         biTree.insert(7,"George");

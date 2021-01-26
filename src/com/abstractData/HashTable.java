@@ -1,15 +1,17 @@
-package com.company;
-
-import java.util.Hashtable;
+package com.abstractData;
 
 public class HashTable <K,V>  {
 
 
-
-    private Node[] hashArray;
+    private Node<K,V>[] hashArray;
     private int arraySize; // total number of slots available in array
     private int size = 0; // counter of elements in hashtable
 
+    /**
+     * Helper class Node - element of internal array
+     * @param <K> Generic key value
+     * @param <V> Generic value
+     */
     private static class Node<K,V> {
         K name;
         V num;
@@ -20,6 +22,10 @@ public class HashTable <K,V>  {
         }
     }
 
+    /**
+     * Initializes empty array of Nodes and makes sure that new array size is Prime number
+     *
+     */
     public HashTable(int numOfSlots) {
 
         if (isPrime(numOfSlots)) {
@@ -34,6 +40,13 @@ public class HashTable <K,V>  {
         }
     }
 
+
+    /**
+     *
+     * @param num an integer to check if is Prime number
+     *
+     * @return true if @param is Prime number
+     */
     private boolean isPrime(int num) {
         for (int i = 2; i * i <= num; i++) {
             if (num % i == 0) {
@@ -52,7 +65,10 @@ public class HashTable <K,V>  {
         }
     }
 
-    // preferred array index positions
+    /**
+     * Preferred array index positions
+      */
+
     private int hashFunc1 (K word){
     int hashVal = word.hashCode();
     hashVal = hashVal % arraySize;
@@ -63,7 +79,10 @@ public class HashTable <K,V>  {
     return hashVal;
     }
 
-    // calculates step size
+    /**
+     * Calculates step size
+      */
+
     private int hashFunc2 (K word) {
 
         int hashVal = word.hashCode();
@@ -77,6 +96,12 @@ public class HashTable <K,V>  {
 
     }
 
+    /**
+     *
+     * @param name is key to add
+     *
+     * @param num is value to add
+     */
     public void insert (K name,V num) {
         Node<K,V> newNode = new Node<K, V>(name, num);
         int indexVal = hashFunc1(newNode.name);
@@ -88,10 +113,15 @@ public class HashTable <K,V>  {
         }
 
         hashArray[indexVal] = newNode;
-        //System.out.println("Inserted word " + word);
         size++;
     }
 
+    /**
+     *
+     * @param word is the key
+     *
+     * @return value corresponding to given key
+     */
 
     public V findByName (K word) {
 
@@ -108,11 +138,9 @@ public class HashTable <K,V>  {
         return null;
     }
 
-
-    //public K findByNum (V num) {
-
-
-
+    /**
+     * Prints all elements in HashTable
+     */
     public void displayAll () {
         for (int i = 0; i < hashArray.length; i++) {
             if (hashArray[i] != null) {

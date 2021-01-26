@@ -4,6 +4,14 @@ public class BinarySearch {
 
    public static int [] arr = new int [] {1,2,3,4,5,6,7,8,9};
 
+
+    /**
+     *
+     * @param a Given array for search
+     * @param x A number to be searched
+     * @return index of searched element
+     */
+
    public static int biSearch (int [] a, int x) {
         int answer = -1;
         int p = 0;
@@ -23,6 +31,15 @@ public class BinarySearch {
         }
         return answer;
     }
+
+    /**
+     * Recursive solution
+     * @param a Array of integers to be searched
+     * @param x Searched integer
+     * @param p first index of array
+     * @param r last index of array
+     * @return index of searched element
+     */
 
     public static int recursiveBiSearch (int [] a, int x, int p, int r) {
        int q = (p+r)/2;
