@@ -1,33 +1,32 @@
 package Sorting;
 
-public class BubbleSorting<V extends Comparable<V>>   {
+import java.util.Arrays;
+import java.util.Collections;
+
+public class BubbleSorting {
 
 
 
-    private final V [] arrayToSort;
 
-    public BubbleSorting (V [] arrayToSort) {
-       this.arrayToSort = arrayToSort;
+    private static <V extends Comparable<? super V>> boolean less (V a, V b) {
+        return a.compareTo(b) <0;
     }
 
-    private boolean less (Comparable<V> a, Comparable<V> b) {
-        return a.compareTo((V) b) <0;
-    }
-
-    private void swap (Object [] arrayToSort, int i, int j) {
+    private static void swap (Object [] arrayToSort, int i, int j) {
         Object swap = arrayToSort[i];
         arrayToSort[i] = arrayToSort[j];
         arrayToSort[j] = swap;
     }
 
-    public  void printArray (V [] a) {
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(arrayToSort[i]);
+    public static <V> void printArray (V [] a) {
+        for (V v : a) {
+            System.out.print(v);
             System.out.print(" ");
         }
     }
 
-    public void sort () {
+    public static<V extends Comparable<V>> void sort (V [] arrayToSort) {
+
         boolean isSorted = false;
         while (!isSorted) {
             isSorted = true;
@@ -49,9 +48,14 @@ public class BubbleSorting<V extends Comparable<V>>   {
 
 
         Integer [] array = new Integer[]{1,2,9,23,74,25,3,5,63,10};
-        BubbleSorting<Integer> sorting = new BubbleSorting<>(array);
 
-        sorting.sort();
+        String [] stringArray = new String[] {"A","F","L","B"};
+
+        System.out.println(Arrays.toString(array));
+
+        BubbleSorting.sort(array);
+
+
 
 
 

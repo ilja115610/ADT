@@ -1,4 +1,4 @@
-package com.abstractData;
+package AbstractDataTypes;
 
 public class HashTable <K,V>  {
 

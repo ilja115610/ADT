@@ -1,4 +1,4 @@
-package com.abstractData;
+package AbstractDataTypes;
 
 import java.util.NoSuchElementException;
 

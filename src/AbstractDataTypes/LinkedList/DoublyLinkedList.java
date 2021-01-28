@@ -1,4 +1,4 @@
-package LinkedList;
+package AbstractDataTypes.LinkedList;
 
 public class DoublyLinkedList {
     
@@ -7,6 +7,19 @@ public class DoublyLinkedList {
 
 
     public DoublyLinkedList () {
+
+    }
+
+    public static class Node {
+
+        public int data;
+        public Node next = null;
+        public Node previous;
+
+
+        public void displayNode () {
+            System.out.println(data);
+        }
 
     }
 
@@ -19,7 +32,7 @@ public class DoublyLinkedList {
     }
 
     public void insertFirst (int data) {
-        Node newNode = new Node ();
+        Node newNode = new Node();
         newNode.data = data;
         if (isEmpty() == true) {
             last = newNode;
