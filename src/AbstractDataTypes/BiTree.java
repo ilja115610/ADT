@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
  * Sorted BinaryTree with Generic type values
  * @param <V> is content of a Node
  */
-public class Tree<V> {
+public class BiTree<V> {
 
     private Node<V> root;
 
@@ -112,7 +112,7 @@ public class Tree<V> {
 
 
     public static void main(String[] args) {
-        Tree<String> biTree = new Tree<> ();
+        BiTree<String> biTree = new BiTree<>();
         biTree.insert(12,"John");
         biTree.insert(16,"Michael");
         biTree.insert(7,"George");

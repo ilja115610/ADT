@@ -7,8 +7,8 @@ public class InsertionSort {
     static Integer [] array = new Integer [] {20,7,25,47,8};
 
 
-    public static boolean less (Comparable a, Comparable b) {
-        return a.compareTo(b) < 0;
+    public static boolean less (Integer a, Integer b) {
+        return Integer.compare(a,b) <0;
     }
 
     public static void swap (Integer [] array, int i, int j) {

@@ -1,4 +1,4 @@
-package AbstractDataTypes.LinkedList;
+package AbstractDataTypes;
 
 public class DoublyLinkedList {
     
@@ -45,6 +45,9 @@ public class DoublyLinkedList {
 
     }
 
+    /**
+     * Method reverses array nodes and links between them
+     */
         public void reverseList () {
 
         Node curr = first;
